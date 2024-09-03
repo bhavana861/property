@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        
+
+      <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+        <div class="max-w-screen-xl mx-auto px-4 py-3 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#" class="flex items-center space-x-2">
+                <img src="./photoss/Link → logo-green.png.png" class="h-8" alt="JustHome Logo" />
+                
+            </a>
+    
+          
+            <button data-collapse-toggle="navbar-menu" type="button" class="inline-flex items-center p-2 text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-menu" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M3 5h14a1 1 0 010 2H3a1 1 0 110-2zm0 6h14a1 1 0 010 2H3a1 1 0 110-2zm0 6h14a1 1 0 010 2H3a1 1 0 110-2z" clip-rule="evenodd" />
+                </svg>
+            </button>
+    
+            
+            <div class="hidden md:flex items-center space-x-6" id="navbar-menu">
+                <ul class="flex flex-col md:flex-row md:space-x-6">
+                    <!-- Home -->
+                    <li class="relative group">
+                        <button class="flex items-center py-2 pr-4 pl-3 font-medium text-gray-700 hover:text-blue-700 md:p-0 dark:text-gray-300 dark:hover:text-white">
+                            Home
+                            <svg class="w-4 h-4 ml-1 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06-.02L10 10.96l3.71-3.77a.75.75 0 111.08 1.04l-4.25 4.31a.75.75 0 01-1.08 0L5.25 8.23a.75.75 0 01-.02-1.02z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div class="absolute left-0 z-10 hidden group-hover:block bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-800">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700">Dashboard</a>
+                                </li>
+                                <!-- More items... -->
+                            </ul>
+                        </div>
+                    </li>
+    
+                    <!-- Listings -->
+                    <li class="relative group">
+                        <button class="flex items-center py-2 pr-4 pl-3 font-medium text-gray-700 hover:text-blue-700 md:p-0 dark:text-gray-300 dark:hover:text-white">
+                            Listings
+                            <svg class="w-4 h-4 ml-1 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06-.02L10 10.96l3.71-3.77a.75.75 0 111.08 1.04l-4.25 4.31a.75.75 0 01-1.08 0L5.25 8.23a.75.75 0 01-.02-1.02z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div class="absolute left-0 z-10 hidden group-hover:block bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-800">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700">All Listings</a>
+                                </li>
+                                <!-- More items... -->
+                            </ul>
+                        </div>
+                    </li>
+    
+                    <!-- Members -->
+                    <li class="relative group">
+                        <button class="flex items-center py-2 pr-4 pl-3 font-medium text-gray-700 hover:text-blue-700 md:p-0 dark:text-gray-300 dark:hover:text-white">
+                            Members
+                            <svg class="w-4 h-4 ml-1 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06-.02L10 10.96l3.71-3.77a.75.75 0 111.08 1.04l-4.25 4.31a.75.75 0 01-1.08 0L5.25 8.23a.75.75 0 01-.02-1.02z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div class="absolute left-0 z-10 hidden group-hover:block bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-800">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700">Member List</a>
+                                </li>
+                                <!-- More items... -->
+                            </ul>
+                        </div>
+                    </li>
+    
+                    <!-- Blog -->
+                    <li>
+                        <a href="#" class="py-2 pr-4 pl-3 text-gray-700 hover:text-blue-700 md:p-0 dark:text-gray-300 dark:hover:text-white">Blog</a>
+                    </li>
+    
+                    <!-- Pages -->
+                    <li>
+                        <a href="#" class="py-2 pr-4 pl-3 text-gray-700 hover:text-blue-700 md:p-0 dark:text-gray-300 dark:hover:text-white">Pages</a>
+                    </li>
+    
+                    <!-- Contact -->
+                    <li>
+                        <a href="#" class="py-2 pr-4 pl-3 text-gray-700 hover:text-blue-700 md:p-0 dark:text-gray-300 dark:hover:text-white">Contact</a>
+                    </li>
+                </ul>
+    
+                <!-- Contact Info and Add Property Button -->
+                <div class="flex items-center space-x-6">
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-phone text-green-600"></i>
+                        <span class="text-gray-700 dark:text-gray-300">+68 654 56723</span>
+                    </div>
+                    <a href="#" class="px-4 py-2 bg-green-600 text-white rounded-full hover:bg-green-700 transition duration-300 text-sm">Add Property</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    
+    <div class="mt-20 flex flex-col items-center px-4">
+      <button class="align-center text-xs border border-black rounded-3xl h-7 w-full sm:w-44 mb-2">
+          LET US GUIDE YOUR HOME
+      </button>
+      <p class="text-center mt-4 px-2">We've more than 745,000 apartments, places & plots.</p>
+      <h1 class="text-2xl sm:text-4xl font-medium mt-4 text-center">FIND YOUR PERFECT HOME</h1>
+      <div class="mt-4 border border-gray-300 rounded-3xl w-full sm:w-2/6 h-10 flex items-center pr-4 relative">
+          <input 
+              type="text" 
+              class="pl-4 w-full h-full rounded-3xl focus:outline-none" 
+              placeholder="Enter names, keywords....">
+          <span class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-yellow-500 text-black rounded-full p-2">
+              <i class="fa-brands fa-searchengin"></i>
+          </span>
+      </div>
+      <div class="relative grid grid-cols-1 sm:grid-cols-3 mt-4 gap-4 w-full">
+       
+          <div class="relative">
+              <img src="https://i.pinimg.com/564x/c5/93/d6/c593d6b68b54e2f30456b5e1d71f1951.jpg" alt="" class="w-full h-auto object-cover">
+              <button class="absolute bottom-4 left-1/2 transform -translate-x-1/2 border border-orange-300 bg-orange-600 rounded-full px-4 py-2">
+                  For Sale
+              </button>
+          </div>
+       
+          <div class="flex flex-col items-start sm:pl-0">
+              <p><b>Explore all things</b></p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                  <button class="border border-gray-300 rounded-full px-4 py-2 text-center w-full sm:w-32">All property</button>
+                  <button class="border border-gray-300 rounded-full px-4 py-2 text-center w-full sm:w-28">For sale</button>
+                  <button class="border border-gray-300 rounded-full px-4 py-2 text-center w-full sm:w-28">For rent</button>
+              </div>
+          </div>
+         
+          <div class="relative">
+              <img src="https://i.pinimg.com/736x/aa/0b/0f/aa0b0f0e448e5249998640dd71f30154.jpg" alt="" class="w-full h-auto object-cover">
+             
+              <button class="absolute bottom-4 left-1/2 transform -translate-x-1/2 border border-red-300 bg-red-600 rounded-full px-4 py-2">
+                  For Sale
+              </button>
+          </div>
+      </div>
+  </div>
+  
+  <div class="bg-[#103321] h-40 flex flex-col justify-between px-4">
+      <p class="text-white text-center mt-9">Thousands of world’s leading companies trust Space</p>
+      <div class="flex flex-wrap justify-evenly gap-4 mb-10 j">
+          <img class="w-10" src="./photoss/Link → bw-1.png.png" alt="">
+          <img class="w-10" src="./photoss/Link → bw-2.png.png" alt="">
+          <img class="w-10" src="./photoss/Link → bw-3.png.png" alt="">
+          <img class="w-10" src="./photoss/Link → bw-4.png.png" alt="">
+          <img class="w-10" src="./photoss/Link → bw-5.png.png" alt="">
+          <img class="w-10" src="./photoss/Link → bw-6.png.png" alt="">
+      </div>
+  </div>
+  <div class="bg-gray-200 mt-0">
+   <br> <br> <br>
+        <h1 class="font-bold text-2xl text-center">Find Your Dream House as Easy as 1,2,3</h1>
+        <p class="text-center">Lorem ipsum dolor sit amet</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+            <div class="w-full sm:w-64 lg:w-52 mx-auto">
+                <img class="w-32 mx-auto" src="./photoss/h41.png.png" alt="">
+                <p class="font-bold mt-4 text-center">1. Search for your favorite house in your location</p>
+                <p class="text-xs mt-2 text-center">Pellentesque egestas elementum egestas faucibus sem.</p>
+            </div>
+            <div class="w-full sm:w-64 lg:w-52 mx-auto">
+                <img class="w-32 mx-auto" src="./photoss/h42.png.png" alt="">
+                <p class="font-bold mt-4 text-center">2. Make a visit appointment with one of your agents</p>
+                <p class="text-xs mt-2 text-center">Pellentesque egestas elementum egestas faucibus sem.</p>
+            </div>
+            <div class="w-full sm:w-64 lg:w-52 mx-auto">
+                <img class="w-32 mx-auto" src="./photoss/h43.png.png" alt="">
+                <p class="font-bold mt-4 text-center">3. Get your dream house in a month, or less</p>
+                <p class="text-xs mt-2 text-center">Pellentesque egestas elementum egestas faucibus sem.</p>
+            </div>
+        
+    </div>
+</div>
+<div class="bg-[#FAF9F6] h-auto md:h-72">
+  <div class="py-8">
+    <h1 class="font-bold text-3xl text-center">Featured Categories</h1>
+    <p class="text-center">Lorem ipsum dolor sit amet</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-10 justify-center">
+      <div class="flex w-full max-w-xs mx-auto bg-white p-4">
+        <img src="./photoss/Vector.png" alt="">
+        <div>
+          <p class="ml-5">Modern Villa</p>
+          <p class="ml-5 mt-2">10 Properties</p>
+        </div>
+      </div>
+      <div class="flex w-full max-w-xs mx-auto bg-white p-4">
+        <img src="./photoss/Vector (1).png" alt="">
+        <div>
+          <p class="ml-5">Apartment</p>
+          <p class="ml-5 mt-2">3 Properties</p>
+        </div>
+      </div>
+      <div class="flex w-full max-w-xs mx-auto bg-white p-4">
+        <img src="./photoss/Vector (2).png" alt="">
+        <div>
+          <p class="ml-5">Office</p>
+          <p class="ml-5 mt-2">3 Properties</p>
+        </div>
+      </div>
+      <div class="flex w-full max-w-xs mx-auto bg-white p-4">
+        <img src="./photoss/Vector (3).png" alt="">
+        <div>
+          <p class="ml-5">Single Family</p>
+          <p class="ml-5 mt-2">5 Properties</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="py-8">
+    <h1 class="font-bold text-3xl text-center">Recent Properties for Rent</h1>
+    <p class="text-center">Lorem ipsum dolor sit amet</p>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10 justify-center">
+      
+      <div class="card w-full max-w-xs mx-auto">
+        <img class="card-img-top w-full" src="./photoss/Link → p17-516x360.jpg.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title text-xs"><b>New Apartment Nice View</b></h5>
+          <p class="card-text text-xs"><i class="fa-solid fa-location-dot"></i>&nbsp;42 Avenue O, Brooklyn</p>
+          <div class="flex items-center justify-start space-x-2 mt-2">
+            <button class="border border-gray-300 rounded-3xl w-12"> <i class="fa-solid fa-bed"></i> 4</button>
+            <button class="border border-gray-300 rounded-3xl w-12"> <i class="fa-solid fa-bath"></i> 1</button>
+            <button class="border border-gray-300 rounded-3xl w-12"> <i class="fa-regular fa-copy"></i> 460</button>
+          </div>
+        </div>
+        <div class="card-footer flex justify-between items-center">
+          <small class="text-red-600">$850/month</small>
+          <button class="border border-gray-600 rounded-3xl"><i class="fa-regular fa-heart text-black"></i></button>
+        </div>
+      </div>
+      
+      <div class="card w-full max-w-xs mx-auto">
+        <img class="card-img-top w-full" src="./photoss/Link → p19-516x360.jpg.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title text-xs"><b>Villa Garden With Pool</b></h5>
+          <p class="card-text text-xs"><i class="fa-solid fa-location-dot"></i>&nbsp;6822 Bay Pkwy, Brooklyn</p>
+          <div class="flex items-center justify-start space-x-2 mt-2">
+            <button class="border border-gray-300 rounded-3xl w-12"> <i class="fa-solid fa-bed"></i> 3</button>
+            <button class="border border-gray-300 rounded-3xl w-12"> <i class="fa-solid fa-bath"></i> 1</button>
+            <button class="border border-gray-300 rounded-3xl w-12"> <i class="fa-regular fa-copy"></i> 350</button>
+          </div>
+        </div>
+        <div class="card-footer flex justify-between items-center">
+          <small class="text-red-600">$350/month</small>
+          <button class="border border-gray-600 rounded-3xl"><i class="fa-regular fa-heart text-black"></i></button>
+        </div>
+      </div>
+
+      <div class="card w-full max-w-xs mx-auto">
+        <img class="card-img-top w-full" src="./photoss/Link → pro1-516x360.jpg.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title text-xs"><b>Ely Parkway Apartment</b></h5>
+          <p class="card-text text-xs"><i class="fa-solid fa-location-dot"></i>&nbsp;7203 20th Ave, Brooklyn</p>
+          <div class="flex items-center justify-start space-x-2 mt-2">
+            <button class="border border-gray-300 rounded-3xl w-12"> <i class="fa-solid fa-bed"></i> 4</button>
+            <button class="border border-gray-300 rounded-3xl w-12"> <i class="fa-solid fa-bath"></i> 1</button>
+            <button class="border border-gray-300 rounded-3xl w-12"> <i class="fa-regular fa-copy"></i> 560</button>
+          </div>
+        </div>
+        <div class="card-footer flex justify-between items-center">
+          <small class="text-red-600">$5,800/month</small>
+          <button class="border border-gray-600 rounded-3xl"><i class="fa-regular fa-heart text-black"></i></button>
+        </div>
+      </div>
+
+      <div class="card w-full max-w-xs mx-auto">
+        <img class="card-img-top w-full" src="./photoss/Link → pro2-516x360.jpg.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title text-xs"><b>Modern Elegant Apartment</b></h5>
+          <p class="card-text text-xs"><i class="fa-solid fa-location-dot"></i>&nbsp;1458 W Taylor St</p>
+          <div class="flex items-center justify-start space-x-2 mt-2">
+            <button class="border border-gray-300 rounded-3xl w-12"> <i class="fa-solid fa-bed"></i> 4</button>
+            <button class="border border-gray-300 rounded-3xl w-12"> <i class="fa-solid fa-bath"></i> 1</button>
+            <button class="border border-gray-300 rounded-3xl w-12"> <i class="fa-regular fa-copy"></i> 300</button>
+          </div>
+        </div>
+        <div class="card-footer flex justify-between items-center">
+          <small class="text-red-600">$590/month</small>
+          <button class="border border-gray-600 rounded-3xl"><i class="fa-regular fa-heart text-black"></i></button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<section class="bg-[#103321] py-10 md:py-20">
+  <div class="max-w-screen-xl mx-auto px-4 md:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      <!-- Customer Testimonials Section -->
+      <div class="text-white">
+        <h1 class="text-2xl mb-4"><b>What our customers are saying us?</b></h1>
+        <p class="text-xs mb-8 md:w-80">
+          Various versions have evolved over the years, sometimes by accident, sometimes on purpose injected humour and the like.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <h1 class="text-lg font-semibold"><b>10m+</b></h1>
+            <p>Happy People</p>
+          </div>
+          <div class="md:ml-0 ml-4">
+            <h1 class="text-lg font-semibold"><b>4.88</b></h1>
+            <p>Overall rating</p>
+            <div class="flex space-x-1 mt-1">
+              <i class="fa-solid fa-star text-yellow-600 text-xs"></i>
+              <i class="fa-solid fa-star text-yellow-600 text-xs"></i>
+              <i class="fa-solid fa-star text-yellow-600 text-xs"></i>
+              <i class="fa-solid fa-star text-yellow-600 text-xs"></i>
+              <i class="fa-solid fa-star text-yellow-600 text-xs"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col md:flex-row items-center text-white">
+      
+        <div class="flex items-start mb-4 md:mb-0">
+          <img class="w-14 md:w-20 -mt-10 md:-mt-20" src="./photoss/test1.png.png" alt="Customer Image">
+          <div class="ml-4 -mt-20 w-60 md:w-72">
+            <p class="text-lg font-semibold">Cameron Williamson</p>
+            <p class="text-sm text-gray-400">Designer</p>
+          </div>
+        </div>
+
+        <div class="mt-10 md:mt-20 md:-ml-72 text-xs md:w-80">
+          <p class="text-white">
+            Searches for multiplexes, property comparisons, and the loan estimator. Works great. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dores.
+          </p>
+          <div class="flex space-x-2 mt-4">
+            <button class="border border-gray-300 rounded-full w-8 h-8 flex items-center justify-center text-white hover:bg-gray-700">
+              &lt;
+            </button>
+            <button class="border border-gray-300 rounded-full w-8 h-8 flex items-center justify-center text-white hover:bg-gray-700">
+              &gt;
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  
+<div class=" h-40 flex flex-col justify-between px-4">
+  <p class="text-black text-center mt-9">Thousands of world’s leading companies trust Space</p>
+  <div class="flex flex-wrap justify-evenly gap-4 mb-10 j">
+      <img class="w-10" src="./photoss/Link → b1.png.png" alt="">
+      <img class="w-10" src="./photoss/Link → b2.png.png" alt="">
+      <img class="w-10" src="./photoss/Link → b3.png.png" alt="">
+      <img class="w-10" src="./photoss/Link → b4.png.png" alt="">
+      <img class="w-10" src="./photoss/Link → b5.png.png" alt="">
+      <img class="w-10" src="./photoss/Link → b6.png.png" alt="">
+  </div>
+</div>
+<div class="py-10">
+  <h1 class="font-bold text-2xl text-center">Properties by Area</h1>
+  <p class="text-center">Lorem ipsum dolor sit amet</p>
+  
+
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-10 px-4">
+    
+    <!-- Column 1 -->
+    <div class="flex flex-col items-start lg:ml-96 lg:w-96">
+      <div class="flex items-center">
+        <img class="w-10" src="./photoss/h41.jpg.png" alt="New York">
+        <div class="ml-4">
+          <b>New York</b>
+          <p class="text-xs">8 Properties</p>
+        </div>
+      </div>
+      <div class="flex items-center mt-4">
+        <img class="w-10" src="./photoss/h44.jpg.png" alt="Miami">
+        <div class="ml-4">
+          <b>Miami</b>
+          <p class="text-xs">2 Properties</p>
+        </div>
+      </div>
+      <div class="flex items-center mt-4">
+        <img class="w-10" src="./photoss/h47.jpg.png" alt="Florida">
+        <div class="ml-4">
+          <b>Florida</b>
+          <p class="text-xs">3 Properties</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Column 2 -->
+    <div class="flex flex-col items-start lg:ml-52">
+      <div class="flex items-center">
+        <img class="w-10" src="./photoss/h42.jpg.png" alt="San Diego">
+        <div class="ml-4">
+          <b>San Diego</b>
+          <p class="text-xs">0 Properties</p>
+        </div>
+      </div>
+      <div class="flex items-center mt-4">
+        <img class="w-10" src="./photoss/h45.jpg.png" alt="Los Angeles">
+        <div class="ml-4">
+          <b>Los Angeles</b>
+          <p class="text-xs">1 Property</p>
+        </div>
+      </div>
+      <div class="flex items-center mt-4">
+        <img class="w-10" src="./photoss/h48.jpg.png" alt="Chicago">
+        <div class="ml-4">
+          <b>Chicago</b>
+          <p class="text-xs">2 Properties</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Column 3 -->
+    <div class="flex flex-col items-start">
+      <div class="flex items-center">
+        <img class="w-10" src="./photoss/h43.jpg.png" alt="Arizona">
+        <div class="ml-4">
+          <b>Arizona</b>
+          <p class="text-xs">0 Properties</p>
+        </div>
+      </div>
+      <div class="flex items-center mt-4">
+        <img class="w-10" src="./photoss/h46.jpg.png" alt="Hawaii">
+        <div class="ml-4">
+          <b>Hawaii</b>
+          <p class="text-xs">0 Properties</p>
+        </div>
+      </div>
+      <div class="flex items-center mt-4">
+        <img class="w-10" src="./photoss/h410.jpg.png" alt="Washington">
+        <div class="ml-4">
+          <b>Washington</b>
+          <p class="text-xs">0 Properties</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div>
+  <h1 class="font-bold text-2xl text-center">Recent Articles & News</h1>
+  <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10 justify-center">
+      
+    <div class="card w-full max-w-xs mx-auto ">
+      <img class="card-img-top w-full" src="./photoss/Figure → Link → pro4-qlye0115ncgc6to7z6qk3p4919iaumpi172tx8ync4.jpg.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title text-xs text-center">Office .  March 19, 2024</h5>
+        <p class="card-text text-large font-bold">10 Walkable Cities Where You Can
+        <p class="card-text text-large font-bold ml-20"> Live Affordably</p></p>
+       <p class="text-xl text-center mt-2">Read More -></p>
+      </div>
+   
+    </div>
+    
+    <div class="card w-full max-w-xs mx-auto">
+      <img class="card-img-top w-full" src="./photoss/Figure → Link → pro3-qlye0115ncgc6to7z6qk3p4919iaumpi172tx8ync4.jpg.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title text-xs text-center">Apartment .  March 19, 2024</h5>
+        <p class="card-text text-large font-bold">Housing Markets That Changed
+          the 
+        <p class="card-text text-large font-bold ml-20"> Most This Week</p></p>
+       <p class="text-xl text-center mt-2">Read More -></p>
+      </div>
+    </div>
+
+    <div class="card w-full max-w-xs mx-auto">
+      <img class="card-img-top w-full" src="./photoss/Link → pro1-516x360.jpg.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title text-xs text-center">Shop.  March 19, 2024</h5>
+        <p class="card-text text-large font-bold">New Apartment Nice in the Best
+        <p class="card-text text-large font-bold ml-20"> Canadian Cities</p></p>
+       <p class="text-xl text-center mt-2">Read More -></p>
+      </div>
+    </div>
+
+    <div class="card w-full max-w-xs mx-auto">
+      <img class="card-img-top w-full" src="./photoss/Figure → Link → pro5-qlye0115ncgc6to7z6qk3p4919iaumpi172tx8ync4.jpg.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title text-xs text-center">Apartment .  March 19, 2024</h5>
+        <p class="card-text text-large font-bold">Read Unveils the Best Canadian
+        <p class="card-text text-large font-bold ml-20">Cities for Biking</p></p>
+       <p class="text-xl text-center mt-2">Read More -></p>
+      </div>
+    </div>
+     
+  </div>
+</div>
+
+<div class="bg-[#103321] mt-20 h-80"> <br><br><br>
+  <div class="flex justify-center items-center">
+    <button class="flex justify-center items-center ">
+      <i class="fa-brands fa-telegram text-3xl text-yellow-700"></i>
+    </button>
+  </div>
+  <div><p class="text-white text-3xl text-center mt-2">Stay Up to Date</p>
+  <p class="text-white text-xs text-center mt-2">Subscribe to our newsletter to receive our weekly feed.</p>
+  <div class="mt-4 border border-gray-300 rounded-3xl w-full sm:w-2/6 h-10 flex items-center pr-4 justify-center mx-auto relative">
+    <input 
+        type="text" 
+        class="pl-4 w-full h-full rounded-3xl focus:outline-none bg-[#103321] bg-opacity-60 backdrop-blur-md" 
+        placeholder="Your e-mail">
+    <span class="absolute right-2 top-1/2 transform -translate-y-1/2 text-white p-1">
+        send ->
+    </span>
+</div>
+</div>
+</div>
+<div class="bg-black grid grid-cols-1 sm:grid-cols-3 h-14">
+  <div class="text-white mt-3 sm:ml-44 text-center sm:text-left">Copyright © 2024. JustHome</div>
+  <div class="flex justify-center sm:justify-start">  
+    <img class="w-24 mt-3 sm:ml-44" src="./photoss/logo-white.svg.png" alt="Logo">
+  </div>
+  <div class="text-white mt-3 flex justify-center sm:justify-start sm:ml-28 space-x-3">
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-linkedin-in"></i>
+  </div>
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+ 
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>
